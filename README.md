@@ -1,4 +1,5 @@
-# TOY COMPILER - A simple compiler for a toy language which is similar to C programming is constructed using FLEX, BISON and LLVM. The toy compier performs everything that a compiler dose, lexical analysis, parsing, semantic analysis, and generating LLVM IR with the help of LLVM'S JIT engine.	
+# TOY COMPILER 
+- A simple compiler for a toy language which is similar to C programming is constructed using FLEX, BISON and LLVM. The toy compier performs everything that a compiler dose, lexical analysis, parsing, semantic analysis, and generating LLVM IR with the help of LLVM'S JIT engine.	
 
 ## FEATURES
 - Variable declarations and assignments
