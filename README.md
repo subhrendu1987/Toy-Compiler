@@ -8,13 +8,13 @@
 
 ##PROJECT STRUCTURE
 ToyCompiler/
-├── lexer.l # Lexical analyzer (Flex)
-├── parser.y # Parser with AST hooks (Bison)
-├── node.h # AST node definitions
-├── codegen.cpp # LLVM code generation logic
-├── main.cpp # Compiler driver
-├── input.toy # Sample toy-language program
-├── README.md # Project documentation
+1.  lexer.l # Lexical analyzer (Flex)
+2.  parser.y # Parser with AST hooks (Bison)
+3.  node.h # AST node definitions
+4.  codegen.cpp # LLVM code generation logic
+5.  main.cpp # Compiler driver
+6.  input.toy # Sample toy-language program
+7.  README.md # Project documentation
 
 
 ---
