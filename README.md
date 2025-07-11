@@ -43,9 +43,7 @@ lex -o tokens.cpp tokens.l
 g++ -std=c++17 -o parser parser.cpp codegen.cpp main.cpp tokens.cpp `llvm-config --cxxflags --ldflags --system-libs --libs all`
 ```
 
-
-
-RUNNING THE COMPILER:
+Execution of toy compiler:
 -Write your program in a file called input.toy
 -Then execute :
  ```bash
