@@ -7,7 +7,22 @@
 - Basic code generation using LLVM IR
 - Function Definitions and function calls
 
-## PROJECT STRUCTURE
+## Environment Preparations
+###  DEPENDENCIES
+- **Flex**
+- **Bison**
+- **LLVM** (10 or later)
+- **g++** with C++17 support
+- (Optional) **Make**
+
+### Installation commands
+```bash
+sudo apt update
+sudo apt install flex bison llvm clang g++ make -y
+```
+
+## Files
+```
 ToyCompiler/
 1.  lexer.l # Lexical analyzer (Flex)
 2.  parser.y # Parser with AST hooks (Bison)
@@ -16,31 +31,19 @@ ToyCompiler/
 5.  main.cpp # Compiler driver
 6.  input.toy # Sample toy-language program
 7.  README.md # Project documentation
-
+8.  Instructions.pdf # Original blog-post
+```
 
 ---
-
-##  DEPENDENCIES
-
-Make sure you have the following tools installed:
-
-- **Flex**
-- **Bison**
-- **LLVM** (10 or later)
-- **g++** with C++17 support
-- (Optional) **Make**
-
-INSTAL THEM ON UBUNTU/WSL:
-```bash
--sudo apt update
--sudo apt install flex bison llvm clang g++ make
-```
-\\BUILD INSTRUCTIONS\\:
+## Build compiler
 ```bash
 bison -d -o parser.cpp parser.y
-flex -o tokens.cpp lexer.l
+#flex -o tokens.cpp lexer.l
+lex -o tokens.cpp tokens.l
 g++ -std=c++17 -o parser parser.cpp codegen.cpp main.cpp tokens.cpp `llvm-config --cxxflags --ldflags --system-libs --libs all`
 ```
+
+
 
 RUNNING THE COMPILER:
 -Write your program in a file called input.toy
