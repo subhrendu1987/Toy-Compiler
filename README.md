@@ -7,7 +7,7 @@
 - Basic code generation using LLVM IR
 - Function Definitions and function calls
 
-##PROJECT STRUCTURE
+## PROJECT STRUCTURE
 ToyCompiler/
 1.  lexer.l # Lexical analyzer (Flex)
 2.  parser.y # Parser with AST hooks (Bison)
@@ -51,4 +51,5 @@ RUNNING THE COMPILER:
 -Then you'll get your output
 
  
+(https://gnuu.org/2009/09/18/writing-your-own-toy-compiler/)
 
